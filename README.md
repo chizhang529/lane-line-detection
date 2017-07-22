@@ -39,9 +39,8 @@ The code is written in Python 3 and necessary libraries are `Numpy`, `Matplotlib
 <img src="./gifs/solidYellowLeft.gif" width="600" height="350" />
 
 ## Shortcomings
-As mentioned above, the pipeline is bad in terms of generalization because some of parameters need to be tuned for images with different sizes, brightness, content, etc. Also, the algorithm is not so robust as it is unable to find left or right lane in some of frames in test video 2.
+As mentioned above, the pipeline is bad in terms of generalization because some of parameters need to be tuned for images with different sizes, brightness, content, etc. Also, the algorithm is not so robust as it is unable to find left or right lane in some of frames in test video 2. Bad weather conditions (snow, rain, etc.) and poor light contions will greatly affect the result as well.
 
 ## Future Work (TODO List)
-- Try to generalize the pipeline
-- Come up with more robust and better approach to detect yellow lanes
-- Revise the pipeline to work on the challenge video
+- Image from infrared camera
+- Add an outlier reduction approach like RANSAC on the hough lines
